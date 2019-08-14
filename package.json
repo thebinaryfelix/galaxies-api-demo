@@ -1,0 +1,21 @@
+{
+  "name": "api-demo",
+  "version": "1.0.0",
+  "description": "Simple API to show documentation on Swagger",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --require dotenv/config api/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateus Felix",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "swagger-ui-dist": "^3.23.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
