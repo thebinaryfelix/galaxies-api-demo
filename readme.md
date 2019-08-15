@@ -24,3 +24,5 @@ This project consists on a base code for constructing a REST API that provides m
 - Show a demo API using a simple server setup with Express;
 - Document its routes and params in Swagger;
 - Create a basic project structure for designing APIs with Javascript.
+
+If you like this project, give it a :star2:
