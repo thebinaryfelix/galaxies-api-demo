@@ -21,8 +21,8 @@ This project consists on a base code for constructing a REST API that provides m
 
 #### Objectives
 
-- Show a demo API using a simple server setup with Express;
-- Document its routes and params in Swagger;
+- Show a demo API using a simple server setup with [Express.js](https://expressjs.com/);
+- Document its routes and params in [Swagger](https://swagger.io/);
 - Create a basic project structure for designing APIs with Javascript.
 
-If you like this project, give it a :star2:
+If you like this project, **give it a star** :star2:
