@@ -1,9 +1,5 @@
 # Galaxies API - WIP
 
-## Intro
-
-This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com/br?utm_source=mateus_felix_github&utm_medium=github_readme&utm_campaign=ironhack_alumni_projects) students with their second project on the Web Development Course.
-
 ### **Run the project**
 
 - Download or clone this repo
@@ -13,7 +9,9 @@ This is a demo API, created for educational purposes. The main use of this code 
 
 _Note: You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
-## **TL;DR**
+## Intro
+
+This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com/br?utm_source=mateus_felix_github&utm_medium=github_readme&utm_campaign=ironhack_alumni_projects) students with their second project on the Web Development Course.
 
 ### Description
 
