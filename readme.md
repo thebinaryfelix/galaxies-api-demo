@@ -2,7 +2,7 @@
 
 ## Intro
 
-This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com) students with their second project on the Web Development Course.
+This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com/br?utm_source=mateus_felix_github&utm_medium=github_readme&utm_campaign=ironhack_alumni_projects) students with their second project on the Web Development Course.
 
 ### **Run the project**
 
