@@ -21,6 +21,14 @@ const addGalaxy = async (req, res) => {
   }
 }
 
+// Get single galaxy by code
+
+// Edit galaxy info
+
+// Delete galaxy info
+
+// Find galaxies matching query
+
 module.exports = {
   getGalaxies,
   addGalaxy,
