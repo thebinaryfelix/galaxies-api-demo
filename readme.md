@@ -4,6 +4,17 @@
 
 This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com) students with their second project on the Web Development Course.
 
+### **Run the project**
+
+- Download or clone this repo
+- Run `npm install` to download project dependencies
+- Run `npm start`
+- Project will run on `http://localhost:3000`
+
+_Note: You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
+
+## **TL;DR**
+
 ### Description
 
 This project consists on a base code for constructing a REST API that provides minimal data about known galaxies in the universe.
