@@ -1,6 +1,10 @@
-const routes = require('express').Router()
+const express = require('express')
+
+const router = express.Router()
+
+// Import routes
 const galaxyRoutes = require('./galaxy.routes')
 
-routes.use('/', galaxyRoutes)
+router.use(galaxyRoutes)
 
-module.exports = routes
+module.exports = router
