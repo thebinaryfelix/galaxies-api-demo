@@ -7,6 +7,14 @@
 - Run `npm start`
 - Project will run on `http://localhost:3000`
 
+### Setup environment
+
+You must create a `.env` file in the root folder and setup the following variables
+
+- PORT=number_of_port [default=3000]
+- ENV=development || production
+- DATABASE_URL=mongodb_database_url
+
 _Note: You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
 ## Intro
