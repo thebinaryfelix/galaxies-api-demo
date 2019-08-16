@@ -14,9 +14,9 @@ This project consists on a base code for constructing a REST API that provides m
 - Document its routes and params in [Swagger](https://swagger.io/)
 - Create a basic project structure for designing APIs with Javascript
 
-### **Run the project**
+### **Run the project** :rocket:
 
-#### Requirement
+#### Requirement :warning:
 
 + _You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
@@ -28,7 +28,7 @@ This project consists on a base code for constructing a REST API that provides m
 
 #### To open the endpoint docs access: `http://localhost:3000/api-docs`
 
-### Setup environment
+### Setup environment :hammer:
 
 You must create a `.env` file in the root folder and setup the following variables
 
@@ -42,4 +42,4 @@ You must create a `.env` file in the root folder and setup the following variabl
   - is adept to the [Karma conventions for commit messages](http://karma-runner.github.io/4.0/dev/git-commit-msg.html)
   - uses [express-swagger-generator](https://www.npmjs.com/package/express-swagger-generator) to document API endpoints
 
-### If you like this project, **give it a star** :star2:
+### :tada: If you like this project, **give it a star** :star2:
