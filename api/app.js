@@ -12,7 +12,7 @@ const swaggerOptions = require('./config/swagger')
 const routes = require('./routes')
 
 // Configure environment
-const DATABASE_URL = process.env.DATABASE_URL
+const { DATABASE_URL } = process.env
 
 // Setup Express and Swagger
 const app = express()
