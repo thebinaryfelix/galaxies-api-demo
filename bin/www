@@ -1,6 +1,6 @@
 const http = require('http')
 
-let app = require('../api')
+let app = require('../api/app.js')
 
 let server = http.createServer(app)
 
@@ -22,6 +22,6 @@ server.on('error', error => {
   }
 })
 
-server.listen(process.env.PORT || 3000, () => {
+server.listen(Number(process.env.PORT) || 3000, () => {
   console.log(`Galaxies API listening on http://localhost:${process.env.PORT}`)
 })
