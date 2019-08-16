@@ -5,10 +5,10 @@ const { Schema } = mongoose
 /**
  * @typedef Galaxy
  * @property {enum} catalogue.required - specify which catalogue it is - eg: messier, ngc
- * @property {string} code.required - Galaxy code on the catalogue
- * @property {string} name.required - Popular name
- * @property {integer} size.required - Diameter in Light Years - eg: 100000
- * @property {enum} type.required - Galaxy structure type - eg: elliptical, spiral, irregular
+ * @property {string} code.required - Galaxy code on the catalogue - eg: m31
+ * @property {string} name.required - Popular name - eg: andromeda
+ * @property {integer} size.required - Diameter in Light Years - eg: 220000
+ * @property {enum} type.required - Galaxy structure type - eg: spiral, elliptical, irregular
  */
 
 const galaxySchema = new Schema(
