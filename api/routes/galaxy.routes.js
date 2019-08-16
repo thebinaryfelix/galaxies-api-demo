@@ -1,5 +1,5 @@
 const express = require('express')
-const { getAllGalaxies, addGalaxy } = require('../controllers/galaxy.controller')
+const { getAllGalaxies, getGalaxyByCode, addGalaxy } = require('../controllers/galaxy.controller')
 
 const router = express.Router()
 
@@ -10,6 +10,8 @@ const router = express.Router()
  * @returns {Error}  403 - Forbidden request
  */
 router.get('/galaxies/all', getAllGalaxies)
+
+router.get('/galaxy/:code', getGalaxyByCode)
 
 router.post('/galaxy/add', addGalaxy)
 

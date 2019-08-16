@@ -21,7 +21,16 @@ const addGalaxy = async (req, res) => {
   }
 }
 
-// Get single galaxy by code
+const getGalaxyByCode = async (req, res) => {
+  const { code } = req.body
+
+  try {
+    const galaxy = await GalaxyModel.findOne({ code })
+    res.status(200).json(galaxy)
+  } catch (err) {
+    res.status(400).json({ message: 'Galaxy not found.' })
+  }
+}
 
 // Edit galaxy info
 
@@ -31,5 +40,6 @@ const addGalaxy = async (req, res) => {
 
 module.exports = {
   getAllGalaxies,
+  getGalaxyByCode,
   addGalaxy,
 }
