@@ -22,6 +22,6 @@ server.on('error', error => {
   }
 })
 
-server.listen(process.env.PORT, () => {
+server.listen(process.env.PORT || 3000, () => {
   console.log(`Galaxies API listening on http://localhost:${process.env.PORT}`)
 })
