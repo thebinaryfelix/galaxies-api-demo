@@ -1,6 +1,6 @@
 const GalaxyModel = require('../models/galaxy.model')
 
-const getGalaxies = async (req, res) => {
+const getAllGalaxies = async (req, res) => {
   try {
     const galaxies = await GalaxyModel.find()
     res.status(200).json(galaxies)
@@ -30,6 +30,6 @@ const addGalaxy = async (req, res) => {
 // Find galaxies matching query
 
 module.exports = {
-  getGalaxies,
+  getAllGalaxies,
   addGalaxy,
 }
