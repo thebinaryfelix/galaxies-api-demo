@@ -4,9 +4,13 @@
   "description": "Simple API to show documentation on Swagger",
   "main": "api/app.js",
   "scripts": {
-    "start": "node api/bin/www",
-    "dev": "DEBUG=app:* nodemon --require dotenv/config api/bin/www",
+    "start": "NODE_ENV=development DEBUG=app:* nodemon ./bin/www",
+    "start:prod": "NODE_ENV=production node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thebinaryfelix/galaxies-api-demo.git"
   },
   "author": "Mateus Felix",
   "license": "ISC",
@@ -17,6 +21,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "debug": "^4.1.1",
     "express-swagger-generator": "^1.1.15",
     "nodemon": "^1.19.1"
   }
