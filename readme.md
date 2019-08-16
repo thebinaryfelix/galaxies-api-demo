@@ -10,16 +10,16 @@ This project consists on a base code for constructing a REST API that provides m
 
 #### Objectives
 
-- Show a demo API using a simple server setup with [Express.js](https://expressjs.com/);
-- Document its routes and params in [Swagger](https://swagger.io/);
-- Create a basic project structure for designing APIs with Javascript.
+- Show a demo API using a simple server setup with [Express.js](https://expressjs.com/)
+- Document its routes and params in [Swagger](https://swagger.io/)
+- Create a basic project structure for designing APIs with Javascript
 
 ### **Run the project**
 
-- Download or clone this repo
-- Run `npm install` to download project dependencies
-- Run `npm start`
-- Project will run on `http://localhost:3000` by default
+1. Download or clone this repo
+2. Run `npm install` to download project dependencies
+3. Run `npm start`
+4. Project will run on `http://localhost:3000` by default
 
 #### To open the endpoint docs access: `http://localhost:3000/api-docs`
 
@@ -36,7 +36,7 @@ _Note: You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.c
 ### Final considerations
 
 - This project:
-  - is adept to the [Karma conventions of commit messages](http://karma-runner.github.io/4.0/dev/git-commit-msg.html)
+  - is adept to the [Karma conventions for commit messages](http://karma-runner.github.io/4.0/dev/git-commit-msg.html)
   - uses [express-swagger-generator](https://www.npmjs.com/package/express-swagger-generator) to document API endpoints
 
 ### If you like this project, **give it a star** :star2:
