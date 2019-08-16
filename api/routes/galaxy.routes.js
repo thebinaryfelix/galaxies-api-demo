@@ -1,9 +1,9 @@
 const express = require('express')
-const { getGalaxies, addGalaxy } = require('../controllers/galaxy.controller')
+const { getAllGalaxies, addGalaxy } = require('../controllers/galaxy.controller')
 
 const router = express.Router()
 
-router.get('/galaxies', getGalaxies)
+router.get('/galaxies/all', getAllGalaxies)
 router.post('/galaxy/add', addGalaxy)
 
 module.exports = router
