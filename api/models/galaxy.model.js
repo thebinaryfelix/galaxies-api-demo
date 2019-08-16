@@ -3,15 +3,15 @@ const Schema = mongoose.Schema
 
 const galaxySchema = new Schema(
   {
-    code: { type: String, required: true },
-    name: { type: String, required: true },
-    type: { type: String, required: true },
-    size: { type: Number, required: true },
     catalogue: {
       type: String,
       enum: ['Messier', 'NGC'],
-      required: true,
+      required: [true, 'Catalogue must be specified'],
     },
+    code: { type: String, required: [true, 'Galaxy code is required'] },
+    name: { type: String, required: [true, 'Galaxy name is required'] },
+    size: { type: Number, default: 'Unknown' },
+    type: { type: String, required: [true, 'Galaxy type is required'] },
   },
   {
     timestamps: {
