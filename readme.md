@@ -16,6 +16,11 @@ This project consists on a base code for constructing a REST API that provides m
 
 ### **Run the project**
 
+#### Requirement
+
++ _You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
+
+#### Steps
 1. Download or clone this repo
 2. Run `npm install` to download project dependencies
 3. Run `npm start`
@@ -30,8 +35,6 @@ You must create a `.env` file in the root folder and setup the following variabl
 - `PORT` = number_of_port [default=3000]
 - `ENV` = [development || production]
 - `DATABASE_URL` = mongodb_database_url
-
-_Note: You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
 ### Final considerations
 
