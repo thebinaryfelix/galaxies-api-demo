@@ -1,11 +1,13 @@
-# Galaxies API - WIP
+# Galaxies API
 
 ### **Run the project**
 
 - Download or clone this repo
 - Run `npm install` to download project dependencies
 - Run `npm start`
-- Project will run on `http://localhost:3000`
+- Project will run on `http://localhost:3000` by default
+
+#### To open the endpoint docs access: `http://localhost:3000/api-docs`
 
 ### Setup environment
 
