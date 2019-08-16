@@ -22,7 +22,13 @@
   },
   "devDependencies": {
     "debug": "^4.1.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
     "express-swagger-generator": "^1.1.15",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
   }
 }

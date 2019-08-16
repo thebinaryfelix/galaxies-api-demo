@@ -3,4 +3,3 @@ prettier.config.js
 .eslintrc.js
 bin/**
 **/*.test.js
-logs/**
