@@ -1,6 +1,6 @@
 const http = require('http')
 
-let app = require('../app.js')
+let app = require('../api')
 
 let server = http.createServer(app)
 
