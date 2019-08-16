@@ -30,6 +30,4 @@ app.use(morgan('dev'))
 //  Connect all our routes to the application
 app.use('/', routes)
 
-// app.listen(PORT, () => console.log(`Galaxies API listening on port: ${PORT}!`))
-
 module.exports = app
