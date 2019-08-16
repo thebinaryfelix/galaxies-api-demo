@@ -5,7 +5,7 @@ const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const expressSwaggerGenerator = require('express-swagger-generator')
-const debug = require('debug')('app:app.js')
+const debug = require('debug')('app:app')
 
 // Import project modules
 const swaggerOptions = require('./config/swagger')
