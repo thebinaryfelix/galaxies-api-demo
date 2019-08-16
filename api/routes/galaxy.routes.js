@@ -14,7 +14,7 @@ router.get('/galaxies/all', getAllGalaxies)
 /**
  * @route POST /galaxies
  * @group Galaxies - Operations involving all documents
- * @param {Galaxy.model} galaxy.body.required - Galaxy object
+ * @param {Galaxy.model} galaxy.body.required - Galaxy to be created
  * @returns {Galaxy.model} 200 - The galaxy saved
  * @returns {Error.model}  400 - Bad request
  */
