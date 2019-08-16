@@ -4,15 +4,22 @@ const { getAllGalaxies, getGalaxyByCode, addGalaxy } = require('../controllers/g
 const router = express.Router()
 
 /**
- * @route GET /galaxies
- * @group CRUD - Galaxy
- * @returns {object} 200 - An array of all galaxies info
- * @returns {Error}  403 - Forbidden request
+ * @route GET /galaxies/all
+ * @group Galaxies
+ * @returns {Array.<Galaxy>} 200 - An array of all galaxies
+ * @returns {Error.model}  403 - Forbidden
  */
 router.get('/galaxies/all', getAllGalaxies)
 
-router.get('/galaxy/:code', getGalaxyByCode)
+/**
+ * @route POST /galaxies
+ * @group Galaxies
+ * @param {Galaxy.model} galaxy.body.required - Galaxy object
+ * @returns {Galaxy.model} 200 - The galaxy saved
+ * @returns {Error.model}  403 - Forbidden
+ */
+router.post('/galaxies', addGalaxy)
 
-router.post('/galaxy/add', addGalaxy)
+router.get('/galaxy/:code', getGalaxyByCode)
 
 module.exports = router
