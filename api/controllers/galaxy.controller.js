@@ -1,3 +1,4 @@
+const debug = require('debug')('app:galaxy.controller')
 const GalaxyModel = require('../models/galaxy.model')
 
 const getAllGalaxies = async (req, res) => {
@@ -5,6 +6,7 @@ const getAllGalaxies = async (req, res) => {
     const galaxies = await GalaxyModel.find()
     res.status(200).json(galaxies)
   } catch (err) {
+    debug(err)
     res.status(400).json({ message: 'Error getting galaxies.' })
   }
 }
@@ -17,6 +19,7 @@ const addGalaxy = async (req, res) => {
     await newGalaxy.save()
     res.status(201).json({ message: 'A new galaxy was added to database.' })
   } catch (err) {
+    debug(err)
     res.status(400).json({ message: 'Error saving new galaxy.' })
   }
 }
@@ -28,6 +31,7 @@ const getGalaxyByCode = async (req, res) => {
     const galaxy = await GalaxyModel.findOne({ code })
     res.status(200).json(galaxy)
   } catch (err) {
+    debug(err)
     res.status(400).json({ message: 'Galaxy not found.' })
   }
 }
