@@ -1,10 +1,10 @@
-# Galaxies API
+# :milky_way: Galaxies API
 
 ## Intro
 
 This is a demo API, created for educational purposes. The main use of this code is to orient [Ironhack's](https://www.ironhack.com/br?utm_source=mateus_felix_github&utm_medium=github_readme&utm_campaign=ironhack_alumni_projects) students with their second project on the Web Development Course.
 
-### Description
+### :memo: Description
 
 This project consists on a base code for constructing a REST API that provides minimal data about known galaxies in the universe.
 
@@ -14,9 +14,9 @@ This project consists on a base code for constructing a REST API that provides m
 - Document its routes and params in [Swagger](https://swagger.io/)
 - Create a basic project structure for designing APIs with Javascript
 
-### **Run the project** :rocket:
+### :rocket: **Run the project**
 
-#### Requirement :warning:
+#### :warning: Requirement
 
 + _You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
@@ -28,13 +28,19 @@ This project consists on a base code for constructing a REST API that provides m
 
 #### To open the endpoint docs access: `http://localhost:3000/api-docs`
 
-### Setup environment :hammer:
+### :hammer: Setup environment
 
 You must create a `.env` file in the root folder and setup the following variables
 
 - `PORT` = number_of_port [default=3000]
 - `ENV` = [development || production]
 - `DATABASE_URL` = mongodb_database_url
+
+### :construction: WIP
+- Create seeds file with galaxies examples to fill database
+- Create route to edit a document
+- Create route to delete document
+- Create route to search by query
 
 ### Final considerations
 
