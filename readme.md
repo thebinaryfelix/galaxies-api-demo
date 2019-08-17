@@ -26,12 +26,9 @@ This project consists on a base code for constructing a REST API that provides m
 2. Run `npm install` to download project dependencies
 3. Run `npm start`
 4. Project will run on `http://localhost:3000` by default
+5. To populate database, run `npm run seed`.
 
 #### To open the endpoint docs access: `http://localhost:3000/api-docs`
-
-### Using seeds
-
-To populate database, run `npm run seed`.
 
 ### :hammer: Setup environment
 
