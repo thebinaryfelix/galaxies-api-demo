@@ -38,12 +38,6 @@ You must create a `.env` file in the root folder and setup the following variabl
 - `ENV` = [development || production]
 - `DATABASE_URL` = mongodb_database_url
 
-### :construction: WIP
-
-- Create route to edit a document
-- Create route to delete document
-- Create route to search by query
-
 ### Final considerations
 
 - This project:
