@@ -6,6 +6,18 @@ const documents = require('./galaxiesData')
 
 const { DATABASE_URL } = process.env
 
+const createCollection = () => {
+  Galaxy.insertMany(documents, async err => {
+    if (err) debug(err)
+    else {
+      const galaxies = await Galaxy.find()
+      process.stdout.write(`${galaxies.length} Documents were inserted\n`)
+      mongoose.connection.close()
+      process.exit()
+    }
+  })
+}
+
 const dropAndCreateCollection = data => {
   const userInput = String(data)
     .toLowerCase()
@@ -14,32 +26,7 @@ const dropAndCreateCollection = data => {
   if (userInput === 'y') {
     mongoose.connection.collections.galaxies.drop(dropError => {
       if (dropError) debug(dropError)
-      Galaxy.insertMany(documents, async err => {
-        if (err) debug(err)
-        const galaxies = await Galaxy.find()
-        process.stdout.write(`${galaxies.length} Documents were inserted\n`)
-        mongoose.connection.close()
-        process.exit()
-      })
-    })
-  } else {
-    process.stdout.write('Exit process\n')
-    process.exit()
-  }
-}
-
-const createCollection = data => {
-  const userInput = String(data)
-    .toLowerCase()
-    .trim()
-
-  if (userInput === 'y') {
-    Galaxy.insertMany(documents, async err => {
-      if (err) debug(err)
-      const galaxies = await Galaxy.find()
-      process.stdout.write(`${galaxies.length} Documents were inserted\n`)
-      mongoose.connection.close()
-      process.exit()
+      else createCollection()
     })
   } else {
     process.stdout.write('Exit process\n')
@@ -61,8 +48,9 @@ const seedGalaxies = async () => {
       )
       process.stdin.on('data', dropAndCreateCollection)
     } else {
-      process.stdout.write('Collection not found. Create new? [Y/n]')
-      process.stdin.on('data', createCollection)
+      createCollection()
+      process.stdout.write('Exit process\n')
+      process.exit()
     }
   } catch (err) {
     debug(err)
