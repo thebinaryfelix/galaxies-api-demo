@@ -4,6 +4,7 @@
   "description": "Simple API to show documentation on Swagger",
   "main": "api/app.js",
   "scripts": {
+    "seed": "DEBUG=seeds:* node ./api/seeds/galaxy.seeds.js",
     "start": "NODE_ENV=development DEBUG=app:* nodemon ./bin/www",
     "start:prod": "NODE_ENV=production node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,7 @@
   "author": "Mateus Felix",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "debug": "^4.1.1",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
