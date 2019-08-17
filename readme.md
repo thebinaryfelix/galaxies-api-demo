@@ -18,15 +18,20 @@ This project consists on a base code for constructing a REST API that provides m
 
 #### :warning: Requirement
 
-+ _You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
+- _You should have **[MongoDB Community Edition ^4.2](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)** running on your machine_
 
 #### Steps
+
 1. Download or clone this repo
 2. Run `npm install` to download project dependencies
 3. Run `npm start`
 4. Project will run on `http://localhost:3000` by default
 
 #### To open the endpoint docs access: `http://localhost:3000/api-docs`
+
+### Using seeds
+
+To populate database, run `npm run seed`.
 
 ### :hammer: Setup environment
 
@@ -37,7 +42,7 @@ You must create a `.env` file in the root folder and setup the following variabl
 - `DATABASE_URL` = mongodb_database_url
 
 ### :construction: WIP
-- Create seeds file with galaxies examples to fill database
+
 - Create route to edit a document
 - Create route to delete document
 - Create route to search by query
