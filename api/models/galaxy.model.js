@@ -4,26 +4,26 @@ const { Schema } = mongoose
 
 /**
  * @typedef Galaxy
- * @property {enum} catalogue.required - specify which catalogue it is - eg: messier, ngc
- * @property {string} code.required - Galaxy code on the catalogue - eg: m31
- * @property {string} name.required - Popular name - eg: andromeda
+ * @property {enum} catalog.required - specify which catalog it is - eg: messier, ngc
+ * @property {string} code.required - Galaxy code on the catalog - eg: m31
+ * @property {string} name - Popular name - eg: andromeda
  * @property {integer} size.required - Diameter in Light Years - eg: 220000
- * @property {enum} type.required - Galaxy structure type - eg: spiral, elliptical, irregular
+ * @property {enum} type.required - Galaxy structure type - eg: spiral, elliptical, irregular, lenticular
  */
 
 const galaxySchema = new Schema(
   {
-    catalogue: {
+    catalog: {
       type: String,
-      enum: ['Messier', 'NGC'],
-      required: [true, 'Catalogue must be specified'],
+      enum: ['messier', 'ngc'],
+      required: [true, 'Catalog must be specified'],
     },
     code: { type: String, required: [true, 'Galaxy code is required'] },
-    name: { type: String, required: [true, 'Galaxy name is required'] },
+    name: String,
     size: { type: Number, required: [true, 'The galaxy must have a size'] },
     type: {
       type: String,
-      enum: ['elliptical', 'spiral', 'irregular'],
+      enum: ['elliptical', 'spiral', 'irregular', 'lenticular'],
       required: [true, 'Galaxy type is required'],
     },
   },
