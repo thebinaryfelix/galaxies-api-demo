@@ -4,6 +4,7 @@ require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 const expressSwaggerGenerator = require('express-swagger-generator')
 const debug = require('debug')('app:app')
 
@@ -18,6 +19,10 @@ const { DATABASE_URL } = process.env
 const app = express()
 const expressSwagger = expressSwaggerGenerator(app)
 expressSwagger(swaggerOptions)
+
+// Configure middlewares
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 // Establish connection with database
 mongoose
