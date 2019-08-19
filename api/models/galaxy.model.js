@@ -7,7 +7,7 @@ const { Schema } = mongoose
  * @property {enum} catalog.required - specify which catalog it is - eg: messier, ngc
  * @property {string} code.required - Galaxy code on the catalog - eg: m31
  * @property {string} name - Popular name - eg: andromeda
- * @property {integer} radius.required - Radius in Light Years - eg: 110000
+ * @property {integer} radius - Radius in Light Years - eg: 110000
  * @property {enum} type.required - Galaxy structure type - eg: spiral, elliptical, irregular, lenticular
  */
 
