@@ -20,7 +20,7 @@ const galaxySchema = new Schema(
     },
     code: { type: String, required: [true, 'Galaxy code is required'] },
     name: String,
-    radius: { type: Number, default: 'unknown' },
+    radius: { type: Number, default: '' },
     type: {
       type: String,
       enum: ['elliptical', 'spiral', 'irregular', 'lenticular'],

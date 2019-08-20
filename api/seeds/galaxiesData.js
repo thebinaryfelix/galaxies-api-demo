@@ -31,7 +31,7 @@ module.exports = [
     catalog: 'ngc',
     code: '278',
     name: '',
-    radius: 'unknown',
+    radius: '',
     type: 'spiral',
   },
 ]
