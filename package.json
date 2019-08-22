@@ -1,5 +1,5 @@
 {
-  "name": "api-demo",
+  "name": "galaxies-api-demo",
   "version": "1.0.0",
   "description": "Simple API to show documentation on Swagger",
   "main": "api/app.js",
